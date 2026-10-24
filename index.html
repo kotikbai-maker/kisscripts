@@ -66,7 +66,7 @@ footer{text-align:center;color:#82758f;padding:0 0 28px;font-size:12px}
 <div class="glow one"></div><div class="glow two"></div>
 <div class="eyebrow">✦ NEW SCRIPT ✦</div>
 <h1>Таймер тёмной ночи</h1>
-<p class="sub">Общий обратный отсчёт для всех посетителей. 45 минут до завершения события.</p>
+<p class="sub">до дропа скрипта.</p>
 <div class="timer-wrap"><div class="timer" id="timer">45:00</div><div class="timer-label">минуты : секунды</div></div>
 <div class="timer-state" id="timerState">Загружаем общий таймер…</div>
 <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
@@ -75,7 +75,7 @@ footer{text-align:center;color:#82758f;padding:0 0 28px;font-size:12px}
 <div class="section-title"><span class="emoji">🧡</span> Наши проекты</div>
 <section class="projects-box" id="projects"><div class="empty" id="emptyState"><div class="empty-icon">🕸️</div><strong>Проектов пока нет</strong>Скоро здесь появятся новые скрипты и проекты.</div></section>
 </main>
-<footer>KIS Scripts · Сделано в хэллоуинском настроении 🎃</footer>
+<footer>KIS Scripts · By Kismur4ik TikTok@kismur4ik 🎃</footer>
 </div>
 <script>
 /*
@@ -103,10 +103,10 @@ function renderTimer(){
   const progress = Math.max(0, Math.min(100, remainingMs / (TOTAL_SECONDS * 1000) * 100));
   bar.style.width = progress + "%";
   if (remainingMs <= 0){
-    stateEl.textContent = "🎃 Время вышло! Событие завершено.";
+    stateEl.textContent = "🎃 ДРОП ожидайте скрипта в проектах...";
     timerEl.classList.add("urgent");
   } else if (remainingMs <= 60 * 1000){
-    stateEl.textContent = "⚠️ Последняя минута! Скоро финал…";
+    stateEl.textContent = "⚠️ Последняя минута! скоро дроп";
     timerEl.classList.add("urgent");
   } else {
     stateEl.textContent = "🟣 Общий таймер активен — одинаковый для всех посетителей.";
